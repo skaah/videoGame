@@ -14,7 +14,9 @@ public class Assassin extends Evil {
 		this.setAutoAttack(Assassin.random(20, 35));
 		this.setPhysDamage(Assassin.random(85, 125));
 		this.setSpeDamage(Assassin.random(30, 60));
-//		this.setEnergyBar(getEnergyBar());
+		this.setEnergy(Assassin.random(100, 125));
+		this.setBar(this.getEnergy());
+
 	}
 	
 	@Override

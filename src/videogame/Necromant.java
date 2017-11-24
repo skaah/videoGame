@@ -13,7 +13,7 @@ public class Necromant extends Evil {
 		this.setAutoAttack(Necromant.random(1, 5));
 		this.setPhysDamage(Necromant.random(25, 45));
 		this.setSpeDamage(Necromant.random(150, 220));
-//		this.setManaBar(getManaBar());
+		this.setBar(this.getHealthPoint() + ((this.getHealthPoint()*25)/100));
 
 	}
 	

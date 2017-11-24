@@ -11,6 +11,10 @@ public abstract class Character {
 	private Integer healthPoint;
 	private Integer physDamage;
 	private Integer speDamage;
+	private Integer bar;
+	private Integer energy;
+	private Integer rage;
+	
 
 	private static Random random = new Random();
 	protected static HashMap<String, Character> champ = new HashMap<>();
@@ -91,6 +95,7 @@ public abstract class Character {
 		case 3:
 			genDamage();
 			return getAutoAttack();
+			
 
 		}
 		return null;
@@ -157,5 +162,28 @@ public abstract class Character {
 		beginFight(c1, c2);
 	}
 
+	public Integer getBar() {
+		return bar;
+	}
+
+	public void setBar(Integer i) {
+		this.bar = i;
+	}
+
+	public Integer getEnergy() {
+		return energy;
+	}
+
+	public void setEnergy(Integer energy) {
+		this.energy = energy;
+	}
+
+	public Integer getRage() {
+		return rage;
+	}
+
+	public void setRage(Integer rage) {
+		this.rage = rage;
+	}
 
 }

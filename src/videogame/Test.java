@@ -36,8 +36,13 @@ public abstract class Test extends Character {
 		champ.put("Ner'Zhul", nerzhul);
 		champ.put("Akame", akame);
 		champ.put("Garosh", garosh);
+		
+		System.out.println(bibi.getHealthPoint());
+		System.out.println(bibi.getBar());
+		
+		System.out.println(robin.getBar());
 
-		battleChoice();
+//		battleChoice();
 
 	}
 

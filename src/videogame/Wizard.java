@@ -14,8 +14,10 @@ public class Wizard extends Good {
 		this.setAutoAttack(Wizard.random(1, 5));
 		this.setPhysDamage(Wizard.random(20, 50));
 		this.setSpeDamage(Wizard.random(100, 200));
+		this.setBar(this.getHealthPoint() + ((this.getHealthPoint()*25)/100));
 		
 	}
+
 
 	@Override
 	protected Integer genDamage() {
