@@ -13,7 +13,7 @@ public class Berserker extends Evil {
 		this.setAutoAttack(Berserker.random(15, 30));
 		this.setPhysDamage(Berserker.random(90, 135));
 		this.setSpeDamage(Berserker.random(20, 40));
-		this.setEnergyBar(Energy.RAGE);
+//		this.setRageBar(getRageBar());
 
 	}
 	

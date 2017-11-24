@@ -13,7 +13,7 @@ public class Warrior extends Good {
 		this.setAutoAttack(Warrior.random(15, 30));
 		this.setPhysDamage(Warrior.random(80, 120));
 		this.setSpeDamage(Warrior.random(30, 60));
-		this.setEnergyBar(Energy.RAGE);
+//		this.setRageBar(getRageBar());
 
 	}
 

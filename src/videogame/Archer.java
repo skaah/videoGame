@@ -14,7 +14,7 @@ public class Archer extends Good {
 		this.setAutoAttack(Archer.random(10, 25));
 		this.setPhysDamage(Archer.random(100, 200));
 		this.setSpeDamage(Archer.random(60, 100));
-		this.setEnergyBar(Energy.STAMINA);
+		
 	}
 	
 	@Override

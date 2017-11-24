@@ -11,7 +11,7 @@ public abstract class Character {
 	private Integer healthPoint;
 	private Integer physDamage;
 	private Integer speDamage;
-	private Energy energyBar;
+
 	private static Random random = new Random();
 	protected static HashMap<String, Character> champ = new HashMap<>();
 
@@ -62,14 +62,6 @@ public abstract class Character {
 		this.physDamage = physDamage;
 	}
 
-	public Energy getEnergyBar() {
-		return energyBar;
-	}
-
-	public void setEnergyBar(Energy energyBar) {
-		this.energyBar = energyBar;
-	}
-
 	protected Integer genDamage() {
 		return autoAttack;
 		// TODO Auto-generated method stub
@@ -106,7 +98,7 @@ public abstract class Character {
 	}
 
 	public static void beginFight(Character p1, Character p2) throws InterruptedException {
-		System.out.printf("Point de vie de Départ %n %s : %d %n %s : %d %n ________________ %n", p1.getName(),
+		System.out.printf("Stats de Départ %n %s: %d %n %s : %d %n ________________ %n", p1.getName(),
 				p1.getHealthPoint(), p2.getName(), p2.getHealthPoint());
 
 		while (p1.getHealthPoint() > 0 && p2.getHealthPoint() > 0) {
@@ -164,5 +156,6 @@ public abstract class Character {
 
 		beginFight(c1, c2);
 	}
+
 
 }
