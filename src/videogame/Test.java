@@ -36,14 +36,24 @@ public abstract class Test extends Character {
 		champ.put("Ner'Zhul", nerzhul);
 		champ.put("Akame", akame);
 		champ.put("Garosh", garosh);
-		
-		System.out.println(bibi.getHealthPoint());
-		System.out.println(bibi.getBar());
-		
-		System.out.println(robin.getBar());
 
-//		battleChoice();
+		battleChoice();
 
 	}
 
+//	public Integer checkBar() {
+//		Integer result = new Integer(0);
+//		while (getBar() > 0) {
+//			if (getBar() > ((80 / 100) * getBar())) {
+//				result = 1;
+//			} else if ((getBar() < ((80 / 100) * getBar())) && (getBar() > ((20 / 100) * getBar()))) {
+//				result = 2;
+//			} else {
+//				result = 3;
+//			}
+//
+//		}
+//		return result;
+//
+//	}
 }
