@@ -37,6 +37,7 @@ public abstract class Test extends Character {
 		champ.put("Akame", akame);
 		champ.put("Garosh", garosh);
 
+		//TIME TO WAR
 		battleChoice();
 
 	}

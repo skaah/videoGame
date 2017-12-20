@@ -44,7 +44,7 @@ public class Necromant extends Evil {
 
 	@Override
 	protected Integer speSkill() {
-		this.setBar((getBar() - 200));
+		this.setBar((getBar() - 135));
 		return getBar();
 	}
 

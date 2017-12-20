@@ -9,7 +9,7 @@ public class Chrono {
 
 		while (minute != 60) {
 			for (int i = 0; i <= 59; i++) {
-				Thread.sleep(100);
+				Thread.sleep(1000);
 
 				seconde = new Integer(i);
 				System.out.printf("%02d:%02d %n", minute, seconde);
