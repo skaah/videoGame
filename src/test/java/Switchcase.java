@@ -29,7 +29,7 @@ public class Switchcase {
 				check = new Boolean(true);
 				break;
 			default:
-				System.out.println("La valeur renseigné n'est pas reconnue");
+				System.out.println("La valeur renseignÃ© n'est pas reconnue");
 
 			}
 
