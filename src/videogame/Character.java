@@ -77,7 +77,7 @@ public abstract class Character {
 	// Fonction de Combats (FONCTIONNEL)
 	public static void beginFight(Character p1, Character p2) throws InterruptedException {
 		System.out.printf(
-				"Stats de Départ %n %s : %d %n - Energy/Mana/Rage : %d %n %s : %d %n - Energy/Mana/Rage : %d %n ________________ %n",
+				"Stats de Dï¿½part %n %s : %d %n - Energy/Mana/Rage : %d %n %s : %d %n - Energy/Mana/Rage : %d %n ________________ %n",
 				p1.getName(), p1.getHealthPoint(), p1.getBar(), p2.getName(), p2.getHealthPoint(), p2.getBar());
 
 		while (p1.getHealthPoint() > 0 && p2.getHealthPoint() > 0) {
@@ -109,9 +109,9 @@ public abstract class Character {
 
 		}
 		if (p1.getHealthPoint() < 0) {
-			System.out.printf("%s sort Victorieux dans son duel face à %s ", p2.getName(), p1.getName());
+			System.out.printf("%s sort Victorieux dans son duel face Ã  %s ", p2.getName(), p1.getName());
 		} else {
-			System.out.printf("%s sort Victorieux dans son duel face à %s ", p1.getName(), p2.getName());
+			System.out.printf("%s sort Victorieux dans son duel face Ã  %s ", p1.getName(), p2.getName());
 		}
 
 	}
