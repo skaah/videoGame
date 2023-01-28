@@ -21,6 +21,9 @@ public abstract class Character {
 	// FIN VARIABLE //
 
 	// Fonction de check du montant de la jauge
+	/**
+	 * @return
+	 */
 	public Integer checkBar() {
 		Integer result = new Integer(5);
 		while (result > 3) {
@@ -56,28 +59,60 @@ public abstract class Character {
 
 	}
 
+class Main {
+	public void main(String[] args) {
+	  // Initialisation des variables
+	  int bar = 100;
+	  int speSkill = 20;
+	  int phySkill = 30;
+	  int autoSkill = 50;
+  
+	  // Utilisation de la commande random pour choisir une "case"
+	  Random rand = new Random();
+	  int choice = rand.nextInt(3);
+	  int damage;
+	  String skillUsed;
+  
+	  // Utilisation de la "case" choisie en fonction de la quantité de la valeur de "bar"
+	  if (choice == 0) {
+		damage = speSkill;
+		skillUsed = "speSkill";
+	  } else if (choice == 1) {
+		damage = phySkill;
+		skillUsed = "phySkill";
+	  } else {
+		damage = autoSkill;
+		skillUsed = "autoSkill";
+	  }
+  
+	  // Affichage de la "case" utilisée
+	  System.out.printf("%s a été utilisé, causant %d de dégâts", skillUsed, damage);
+	}
+  }
+
+
 	// Fonction de choix de sort aleatoire par RANDOM(FONCTIONNEL)
-	// public Integer selectSkill() {
-	// switch (random(1, 3)) {
-	// case 1:
-	// genSpeDamage();
-	// return getSpeDamage();
-	// case 2:
-	// genPhyDamage();
-	// return getPhysDamage();
-	// case 3:
-	// genDamage();
-	// return getAutoAttack();
-	//
-	// }
-	// return null;
+	 public Integer selectSkill() {
+	 switch (random(1, 3)) {
+	 case 1:
+	 genSpeDamage();
+	 return getSpeDamage();
+	 case 2:
+	 genPhyDamage();
+	 return getPhysDamage();
+	 case 3:
+	 genDamage();
+	 return getAutoAttack();
+	
+	 }
+	 return null;
 	//
 	// }
 
 	// Fonction de Combats (FONCTIONNEL)
 	public static void beginFight(Character p1, Character p2) throws InterruptedException {
 		System.out.printf(
-				"Stats de D�part %n %s : %d %n - Energy/Mana/Rage : %d %n %s : %d %n - Energy/Mana/Rage : %d %n ________________ %n",
+				"Stats de Départ %n %s : %d %n - Energy/Mana/Rage : %d %n %s : %d %n - Energy/Mana/Rage : %d %n ________________ %n",
 				p1.getName(), p1.getHealthPoint(), p1.getBar(), p2.getName(), p2.getHealthPoint(), p2.getBar());
 
 		while (p1.getHealthPoint() > 0 && p2.getHealthPoint() > 0) {
